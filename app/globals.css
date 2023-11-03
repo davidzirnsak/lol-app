@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  .h1 {
+    @apply text-[50px] leading-[70px] font-black;
+  }
+  h2,
+  .h2 {
+    @apply text-[38px] leading-[48px] font-extrabold;
+  }
+  h3,
+  .h3 {
+    @apply text-[30px] leading-[40px] font-extrabold;
+  }
+  h4,
+  .h4 {
+    @apply text-[24px] leading-[34px] font-bold;
+  }
+  h5,
+  .h5 {
+    @apply text-[22px] leading-[32px] font-bold;
+  }
+  .title {
+    @apply text-[22px] leading-[32px] font-extrabold;
+  }
+  .subtitle {
+    @apply text-[18px] leading-[28px] font-extrabold;
+  }
+  .paragraph-big {
+    @apply text-[18px] leading-[28px] font-medium;
+  }
+  .paragraph-regular {
+    @apply text-[16px] leading-[26px] font-medium;
+  }
+  .button {
+    @apply uppercase text-[14px] leading-[14px] font-bold;
+  }
+  .label {
+    @apply text-[16px] leading-[16px] font-extrabold;
+  }
+  .link {
+    @apply text-[16px] leading-[16px] font-bold;
+  }
+  .error {
+    @apply text-[14px] leading-[14px] font-bold;
+  }
+}
+@layer utilities {
+  .p-res {
+    @apply px-2 tablet:px-7 laptop:px-10;
+  }
+  .content-wrapper {
+    @apply max-w-container;
+  }
+}
